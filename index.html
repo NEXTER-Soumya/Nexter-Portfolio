@@ -38,12 +38,31 @@
           </li>
         </ul>
       </div>
-      <div class="hamburger">
+      <div class="hamburger" onclick="toggleSidebar()">
         <div></div>
         <div></div>
         <div></div>
       </div>
     </nav>
+    <div id="sidebar">
+      <ul>
+        <li><a href="#details" onclick="toggleSidebar()">Home</a></li>
+        <li><a href="#skills" onclick="toggleSidebar()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleSidebar()">Projects</a></li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/soumyabiswas2003/"
+            target="_blank"
+            >Linked In</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/NEXTER-Soumya" target="_blank"
+            >GitHub</a
+          >
+        </li>
+      </ul>
+    </div>
     <section class="first-section" id="details">
       <div class="left-section">
         Hi, My name is <span class="my_Name">Soumya</span>
@@ -118,6 +137,44 @@
         </a>
       </div>
     </section>
+    <!--CONTACT SECTION-->
+    <section class="contact-section">
+      <div class="contact-header">Contact</div>
+      <div class="contact-container">
+        <div class="contact-left">
+          <form action="" method="post">
+            <div class="name">
+              <div class="name-text">Name :</div>
+              <div class="name-field">
+                <input
+                  type="text"
+                  placeholder="Enter your name or Company name"
+                />
+              </div>
+            </div>
+            <div class="your-email">
+              <div class="your-email-text">E-mail :</div>
+              <div class="your-email-field">
+                <input type="email" placeholder="Enter your E-mail address" />
+              </div>
+            </div>
+            <div class="subject-area">
+              <div class="subject-text">Subject</div>
+              <textarea name="" id="" cols="40" rows="4"></textarea>
+            </div>
+            <div class="submit-button">
+              <button type="submit">Connect</button>
+            </div>
+          </form>
+        </div>
+        <div class="contact-right">
+          <div class="mini-contact-container">
+            <div class="to-quote">To :</div>
+            <div class="e-mail-text">soumyabratabiswas2003@gmail.com</div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <!-- Setup and start animation! -->
     <script>
@@ -135,5 +192,11 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script>
+      function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        sidebar.classList.toggle('active');
+      }
+    </script>
   </body>
 </html>

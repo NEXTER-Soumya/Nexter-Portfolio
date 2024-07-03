@@ -5,11 +5,11 @@
   background-color: rgb(32, 31, 32);
   scroll-behavior: smooth;
 }
-
+/*
 body::-webkit-scrollbar {
   display: none;
 }
-
+*/
 /* Navbar */
 nav {
   display: flex;
